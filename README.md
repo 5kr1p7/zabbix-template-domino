@@ -1,4 +1,4 @@
-Zabbix template for monitoring IBM Lotus Domino
+Zabbix template for IBM Lotus Domino
 ======================================
 
 This is a template for [Zabbix monitoring system](http://www.zabbix.com/ "Zabbix website").
@@ -6,7 +6,7 @@ This is a template for [Zabbix monitoring system](http://www.zabbix.com/ "Zabbix
 How to configure Lotus Domino
 ---------------------------------------------
 1. [Install and setup windows SNMP service](https://support.powerdnn.com/KB/a764/how-to-install-snmp-and-configure-the-community-string.aspx) (community and allowed clients)
-- Launch lnsnmp.exe -Sc from Domino directory for install Lotus SNMP service
+- Launch ``lnsnmp.exe -Sc`` from Domino directory for install Lotus SNMP service
 - Restart SNMP services:
  <pre>
 net stop snmp
