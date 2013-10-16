@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2013-10-16T09:58:20Z</date>
+    <date>2013-10-16T11:03:42Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -25,7 +25,7 @@
                 <item>
                     <name>lnServerCPUCount</name>
                     <type>4</type>
-                    <snmp_community>${COMMUNITY}</snmp_community>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.6.2.12.0</snmp_oid>
                     <key>lnServerCPUCount</key>
@@ -64,7 +64,7 @@
                 <item>
                     <name>lnServerName</name>
                     <type>4</type>
-                    <snmp_community>${COMMUNITY}</snmp_community>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.6.2.1.0</snmp_oid>
                     <key>lnServerName</key>
@@ -103,7 +103,7 @@
                 <item>
                     <name>lnServerNotesVersion</name>
                     <type>4</type>
-                    <snmp_community>${COMMUNITY}</snmp_community>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.6.2.4.0</snmp_oid>
                     <key>lnServerNotesVersion</key>
@@ -142,7 +142,7 @@
                 <item>
                     <name>lnServerSystemVersion</name>
                     <type>4</type>
-                    <snmp_community>${COMMUNITY}</snmp_community>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.6.2.5.0</snmp_oid>
                     <key>lnServerSystemVersion</key>
@@ -181,7 +181,7 @@
                 <item>
                     <name>lnServerTitle</name>
                     <type>4</type>
-                    <snmp_community>${COMMUNITY}</snmp_community>
+                    <snmp_community>{$COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.6.2.2.0</snmp_oid>
                     <key>lnServerTitle</key>
