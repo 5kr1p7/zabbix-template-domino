@@ -25,7 +25,7 @@
                 <item>
                     <name>lnAverageMailDeliverTime</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.9.0</snmp_oid>
                     <key>lnAverageMailDeliverTime</key>
@@ -64,7 +64,7 @@
                 <item>
                     <name>lnAverageMailSizeDelivered</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.11.0</snmp_oid>
                     <key>lnAverageMailSizeDelivered</key>
@@ -103,7 +103,7 @@
                 <item>
                     <name>lnDeadMail</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.1.0</snmp_oid>
                     <key>lnDeadMail</key>
@@ -142,7 +142,7 @@
                 <item>
                     <name>lnDeliveredMail</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.2.0</snmp_oid>
                     <key>lnDeliveredMail</key>
@@ -181,7 +181,7 @@
                 <item>
                     <name>lnMailDomain</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.8.0</snmp_oid>
                     <key>lnMailDomain</key>
@@ -220,7 +220,7 @@
                 <item>
                     <name>lnMailTransferFailures</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.19.0</snmp_oid>
                     <key>lnMailTransferFailures</key>
@@ -259,7 +259,7 @@
                 <item>
                     <name>lnNumWaitingRecipients</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.7.0</snmp_oid>
                     <key>lnNumWaitingRecipients</key>
@@ -298,7 +298,7 @@
                 <item>
                     <name>lnTotalKBTransferred</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.18.0</snmp_oid>
                     <key>lnTotalKBTransferred</key>
@@ -337,7 +337,7 @@
                 <item>
                     <name>lnTotalMailFailures</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.3.0</snmp_oid>
                     <key>lnTotalMailFailures</key>
@@ -376,7 +376,7 @@
                 <item>
                     <name>lnTotalRoutedMail</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.4.0</snmp_oid>
                     <key>lnTotalRoutedMail</key>
@@ -415,7 +415,7 @@
                 <item>
                     <name>lnTransferredMail</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.5.0</snmp_oid>
                     <key>lnTransferredMail</key>
@@ -454,7 +454,7 @@
                 <item>
                     <name>lnWaitingMail</name>
                     <type>4</type>
-                    <snmp_community>{$COMMUNITY}</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.334.72.1.1.4.6.0</snmp_oid>
                     <key>lnWaitingMail</key>
