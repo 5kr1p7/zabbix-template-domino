@@ -18,3 +18,10 @@ net start lsnmp
   ``load quryset`` for SNMP queries<br />
   ``load intrcpt`` for SNMP traps<br />
   ``load collect`` for statistics threshold traps
+
+How to configure Lotus Domino (Linux)
+---------------------------------------------
+TODO
+Instal and configure template
+---------------------------------------------
+TODO
