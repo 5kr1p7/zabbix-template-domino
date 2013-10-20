@@ -22,6 +22,7 @@ net start lsnmp
 How to configure Lotus Domino (Linux)
 ---------------------------------------------
 TODO
-Instal and configure template
+
+Install and configure template
 ---------------------------------------------
 TODO
