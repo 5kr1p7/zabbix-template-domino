@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>6.0</version>
+    <date>2022-10-31T17:35:30Z</date>
+    <groups>
+        <group>
+            <uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <uuid>d61dfc1f95504e95ab8d2dd976a40cbf</uuid>
+            <template>Domino - Agent Manager</template>
+            <name>Domino - Agent Manager</name>
+            <description>SNMP Agent Manager Domino</description>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <uuid>54dc187af4ae4ef8b11070d8083bc0bd</uuid>
+                    <name>lnDailyScheduledRuns</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>1.3.6.1.4.1.334.72.1.1.11.2.0</snmp_oid>
+                    <key>lnDailyScheduledRuns</key>
+                    <delay>300</delay>
+                    <units>agent</units>
+                    <description>The number of tasks that the agent manager has scheduled to run during the course of the day.</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>Agent Manager</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>8b2198e7398a4ae5b857c8ab8fd0cd8a</uuid>
+                    <name>lnDailyTriggeredRuns</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>1.3.6.1.4.1.334.72.1.1.11.3.0</snmp_oid>
+                    <key>lnDailyTriggeredRuns</key>
+                    <delay>300</delay>
+                    <units>agent</units>
+                    <description>The number of tasks that the agent manager has had triggered to run by an event during the course of the day.</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>Agent Manager</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>cda89eeababd4ac1845780d2bfc2aec0</uuid>
+                    <name>lnDailyUnsuccessfulRuns</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>1.3.6.1.4.1.334.72.1.1.11.4.0</snmp_oid>
+                    <key>lnDailyUnsuccessfulRuns</key>
+                    <delay>300</delay>
+                    <units>agent</units>
+                    <description>The number of tasks the agent manager has unsuccessfully run during the course of the day.</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>Agent Manager</value>
+                        </tag>
+                    </tags>
+                    <triggers>
+                        <trigger>
+                            <uuid>f6b773e49926482b97304502342c6517</uuid>
+                            <expression>last(/Domino - Agent Manager/lnDailyUnsuccessfulRuns)&gt;0</expression>
+                            <name>Agents Daily Error</name>
+                            <priority>HIGH</priority>
+                            <description>Unsuccessful agent run in daily</description>
+                            <manual_close>YES</manual_close>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <uuid>9b9d5ae25fb2472dae4db715784ca4e8</uuid>
+                    <name>lnDailyUsedRunTime</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>1.3.6.1.4.1.334.72.1.1.11.5.0</snmp_oid>
+                    <key>lnDailyUsedRunTime</key>
+                    <delay>300</delay>
+                    <units>agent</units>
+                    <description>The number of seconds used to run an agent.</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>Agent Manager</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>edfdddbb63734e44ace13beab8c6afdf</uuid>
+                    <name>lnHourlyAccessDenials</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>1.3.6.1.4.1.334.72.1.1.11.1.0</snmp_oid>
+                    <key>lnHourlyAccessDenials</key>
+                    <delay>300</delay>
+                    <units>agent</units>
+                    <description>The number of times the agent manager failed to execute a given task, probably due to ACL restrictions</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>Agent Manager</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>dda89b3429ae41f68b12a07c758ed919</uuid>
+                    <name>lnHourlyScheduledRuns</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>1.3.6.1.4.1.334.72.1.1.11.7.0</snmp_oid>
+                    <key>lnHourlyScheduledRuns</key>
+                    <delay>300</delay>
+                    <units>agent</units>
+                    <description>The number of tasks the agent manager has scheduled to run during the last hour.</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>Agent Manager</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>8bafadda2ee14e79a2fdee5e895259a8</uuid>
+                    <name>lnHourlyTriggeredRuns</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>1.3.6.1.4.1.334.72.1.1.11.8.0</snmp_oid>
+                    <key>lnHourlyTriggeredRuns</key>
+                    <delay>300</delay>
+                    <units>agent</units>
+                    <description>The number of tasks the agent manager has had triggered to run by an event during the last hour.</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>Agent Manager</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>afe9649a6497477aac2a29e18dbbcc31</uuid>
+                    <name>lnHourlyUnsuccessfulRuns</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>1.3.6.1.4.1.334.72.1.1.11.9.0</snmp_oid>
+                    <key>lnHourlyUnsuccessfulRuns</key>
+                    <delay>300</delay>
+                    <units>agent</units>
+                    <description>The number of tasks the agent manager has unsuccessfully run during the last hour.</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>Agent Manager</value>
+                        </tag>
+                    </tags>
+                    <triggers>
+                        <trigger>
+                            <uuid>b916d49bfe4046e980570675f827d8fa</uuid>
+                            <expression>last(/Domino - Agent Manager/lnHourlyUnsuccessfulRuns)&gt;0</expression>
+                            <name>Agens Hourly Denials</name>
+                            <priority>HIGH</priority>
+                            <description>Unsuccessful Agent Run</description>
+                        </trigger>
+                        <trigger>
+                            <uuid>16b9cf113adc408a990463d6619946e6</uuid>
+                            <expression>last(/Domino - Agent Manager/lnHourlyUnsuccessfulRuns)&gt;0</expression>
+                            <name>Agens Hourly Error</name>
+                            <priority>HIGH</priority>
+                            <description>Unsuccessful Agent Run</description>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <uuid>ba3d9ed99fb748af87e418a793cfae7a</uuid>
+                    <name>lnHourlyUsedRunTime</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>1.3.6.1.4.1.334.72.1.1.11.10.0</snmp_oid>
+                    <key>lnHourlyUsedRunTime</key>
+                    <delay>300</delay>
+                    <trends>0</trends>
+                    <value_type>TEXT</value_type>
+                    <description>The number of seconds to run an agent.</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>Agent Manager</value>
+                        </tag>
+                    </tags>
+                </item>
+            </items>
+            <tags>
+                <tag>
+                    <tag>Application</tag>
+                    <value>Agent Manager</value>
+                </tag>
+            </tags>
+        </template>
+    </templates>
+    <graphs>
+        <graph>
+            <uuid>e40c32ea25db403f8a7dfeed1bfcf51d</uuid>
+            <name>Agents Daily</name>
+            <ymin_type_1>FIXED</ymin_type_1>
+            <graph_items>
+                <graph_item>
+                    <drawtype>FILLED_REGION</drawtype>
+                    <color>1A7C11</color>
+                    <calc_fnc>ALL</calc_fnc>
+                    <item>
+                        <host>Domino - Agent Manager</host>
+                        <key>lnDailyScheduledRuns</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <uuid>4558b0ad5b634ed0a04deb7da0154dbd</uuid>
+            <name>Agents Daily Unsuccessful</name>
+            <ymin_type_1>FIXED</ymin_type_1>
+            <graph_items>
+                <graph_item>
+                    <drawtype>FILLED_REGION</drawtype>
+                    <color>1A7C11</color>
+                    <calc_fnc>ALL</calc_fnc>
+                    <item>
+                        <host>Domino - Agent Manager</host>
+                        <key>lnDailyUnsuccessfulRuns</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <uuid>f13fc736982c4d8a9711e2696085ec7e</uuid>
+            <name>Agents Hourly</name>
+            <graph_items>
+                <graph_item>
+                    <drawtype>FILLED_REGION</drawtype>
+                    <color>1A7C11</color>
+                    <calc_fnc>ALL</calc_fnc>
+                    <item>
+                        <host>Domino - Agent Manager</host>
+                        <key>lnHourlyScheduledRuns</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <uuid>c5996fb5d9ea40608890bd29e0c03428</uuid>
+            <name>Agents Hourly Unsuccessful</name>
+            <graph_items>
+                <graph_item>
+                    <drawtype>FILLED_REGION</drawtype>
+                    <color>1A7C11</color>
+                    <calc_fnc>ALL</calc_fnc>
+                    <item>
+                        <host>Domino - Agent Manager</host>
+                        <key>lnHourlyUnsuccessfulRuns</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>
